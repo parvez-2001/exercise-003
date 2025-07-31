@@ -1,0 +1,66 @@
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: #f4f4f4;
+    }
+
+    input,
+    button {
+      margin: 5px;
+      padding: 8px;
+    }
+
+    .button-container {
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+      gap: 10px;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .button-container button {
+      background-color: #008cff;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .button-container .full-width {
+      grid-column: span 2;
+      justify-self: center;
+    }
+
+    #output {
+      margin-top: 20px;
+      padding: 10px;
+      background: #fff;
+      border: 1px solid #ccc;
+    }
+
+    .head {
+      text-align: center;
+    }
+
+    /* Media Query for < 768px (Tablets) */
+    @media (max-width: 768px) {
+      button {
+        flex: 1 1 48%;
+      }
+    }
+
+    /* Media Query for < 576px (Mobiles) */
+    @media (max-width: 576px) {
+      button {
+        flex: 1 1 100%;
+        font-size: 15px;
+        padding: 10px 14px;
+      }
+
+      input {
+        width: 100%;
+      }
+    }
